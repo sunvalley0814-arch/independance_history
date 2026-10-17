@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나와 닮은 독립운동가 찾기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇰🇷 나와 닮은 독립운동가 찾기</h1>
+            <p>나의 성향과 가치관을 통해 알아보는 운명의 독립운동가!</p>
+        </header>
+
+        <main>
+            <!-- 시작 화면 -->
+            <div id="start-screen" class="screen active">
+                <div class="intro-card">
+                    <p>중학교 3학년 역사 수업 프로젝트</p>
+                    <h2>나는 어떤 독립운동가와 닮았을까?</h2>
+                    <button id="start-btn" class="btn">테스트 시작하기</button>
+                </div>
+            </div>
+
+            <!-- 질문 화면 -->
+            <div id="quiz-screen" class="screen">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <div class="question-box">
+                    <span id="question-number">Q1.</span>
+                    <h2 id="question-text">질문 내용이 여기에 들어갑니다.</h2>
+                </div>
+                <div id="options-container" class="options-container">
+                    <!-- 버튼 동적 생성 -->
+                </div>
+            </div>
+
+            <!-- 결과 화면 -->
+            <div id="result-screen" class="screen">
+                <div class="result-card">
+                    <span class="result-tag">나와 가장 닮은 독립운동가는?</span>
+                    <h2 id="result-name">독립운동가 이름</h2>
+                    <p id="result-desc" class="result-desc">설명이 여기에 들어갑니다.</p>
+                    <div class="activist-quote" id="result-quote">"어록이 여기에 들어갑니다."</div>
+                    <button id="restart-btn" class="btn">다시 테스트하기</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
